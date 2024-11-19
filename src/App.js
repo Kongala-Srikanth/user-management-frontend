@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import {Switch, Route, Redirect} from 'react-router-dom'
+import ViewDetails from './components/ViewDetails'
+import UpdateForm from './components/UpdateForm'
+import AddUserDetails from './components/AddUserDetails'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Switch>
+    <Route exact path='/users' component={ViewDetails} />
+    <Route exact path='/user/:id' component={UpdateForm} />
+    <Route exact path='/users/add' component={AddUserDetails} />
+    <Redirect to='/users' />
+   </Switch>
   );
 }
 

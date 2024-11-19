@@ -1,0 +1,100 @@
+
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.main-heading {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.user-details-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.each-user-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+.user-info p {
+    margin: 5px 0;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #555;
+}
+
+
+.user-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #a71d2a;
+}
+
+
+.add-button {
+    background-color: #ff9100; 
+    color: #fff;
+}
+
+.add-button:hover {
+    background-color: #ce7f08;
+}
+
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
